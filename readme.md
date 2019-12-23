@@ -19,4 +19,4 @@ Then edit your .env file with DB credentials and other settings.
 
 9. Run npm run dev or npm run watch to compile the react code
 
-10. Finally Run php artisan serve and visit localhost:8000
+10. Finally Run php artisan serve and visit localhost:8000 
