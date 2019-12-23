@@ -13,8 +13,10 @@ Then edit your .env file with DB credentials and other settings.
 
 6. Run php artisan storage:link command
 
-7. Run npm install
+7. Run npm install --global cross-env
 
-8. finally Run npm run dev or npm run watch next Run php artisan serve to start the serve
+8. Run npm install --no-bin-links
+
+9. finally Run npm run dev or npm run watch next Run php artisan serve to start the serve
 
 * Open in browser localhost:8000
