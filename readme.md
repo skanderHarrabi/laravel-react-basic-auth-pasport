@@ -1,6 +1,6 @@
 ## Clone the project to a location you choose then cd to the project and run these commands:
 
-1. .env.example and change his name to .env,
+1. Copy the .env.example and change his name to .env,
 Then edit your .env file with DB credentials and other settings.
 
 2. Run composer install command
