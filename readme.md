@@ -7,7 +7,7 @@ Then edit your .env file with DB credentials and other settings.
 
 3. Run php artisan migrate and if you have a default data to insert to DB just add --seed option.
  
-4. php artisan passport:install to generate Clients
+4. Run php artisan passport:install to generate Clients
 
 5. Run php artisan key:generate command.
 
