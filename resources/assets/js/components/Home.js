@@ -12,6 +12,8 @@ export default class Home extends Component {
         this.onChangePassword = this.onChangePassword.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
+    componentDidMount(){
+    }
     onChangeemail(e){
         this.setState({
             email : e.target.value,

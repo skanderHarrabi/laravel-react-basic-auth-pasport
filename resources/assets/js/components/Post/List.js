@@ -22,17 +22,21 @@ export default class List extends Component {
      }
 
     componentDidMount(){
-        axios.get('/api/posts')
-        .then(Response =>{
-            console.log(Response.data[0]);
-            this.setState({
-                authUser : Response.data[1],
-                posts : Response.data[0].data,
-                itemsCountPerPage:Response.data[0].per_page,
-                totalItemsCount:Response.data[0].total,
-                activePage:Response.data[0].current_page
+        if(!localStorage.getItem('passportToken')){
+            this.props.history.push('/login');
+        }else{
+            axios.get('/api/posts')
+            .then(Response =>{
+                console.log(Response.data[0]);
+                this.setState({
+                    authUser : Response.data[1],
+                    posts : Response.data[0].data,
+                    itemsCountPerPage:Response.data[0].per_page,
+                    totalItemsCount:Response.data[0].total,
+                    activePage:Response.data[0].current_page
+                });
             });
-        });
+        }
     }
 
     onDelete(PostId){

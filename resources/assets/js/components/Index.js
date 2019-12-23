@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import setAuthToken from './utils/setAuth';
 import {BrowserRouter as Router , Link ,Route} from 'react-router-dom';
+import { ProtectedRoute } from './protectedRoute';
 export default class Index extends Component {
     render() {
         return (
